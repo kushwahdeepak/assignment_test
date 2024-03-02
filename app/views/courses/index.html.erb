@@ -1,0 +1,15 @@
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Instructor</th>
+	</tr>
+	<tr>
+	<% @courses.each do |course| %>
+		<td><%= course.id %></td>
+		<td><%= course.name %></td>
+		<td><%= course.user.email %></td>
+
+	<% end %>
+	</tr>
+</table>
